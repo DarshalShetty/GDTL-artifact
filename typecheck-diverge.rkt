@@ -28,4 +28,4 @@
   (almost-plus : (-> (-> Nat Nat Nat) Nat Nat Nat))
   (almost-plus self m n = (ifzero? Nat m n (Succ (self (sub1 m) n)))))
 
-((Z Nat (-> Nat Nat) almost-plus) 1 1)
+((Z Nat (-> Nat Nat) almost-plus) 1)

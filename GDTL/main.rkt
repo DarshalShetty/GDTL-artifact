@@ -33,11 +33,11 @@
 
 (require (for-syntax syntax/parse))
  (require (for-syntax racket/syntax))
-(require (only-in redex/reduction-semantics
+#;(require (only-in redex/reduction-semantics
                   judgment-holds
                   term
                   apply-reduction-relation*))
-(require redex)
+(require redex/reduction-semantics)
 (require  (rename-in "lang_simple.rkt" (currently-defined-vars defined-vars )) )
 
 (default-language LContext)
